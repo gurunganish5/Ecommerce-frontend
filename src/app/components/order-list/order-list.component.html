@@ -1,0 +1,15 @@
+<!-- order-list.component.html -->
+<mat-card>
+    <mat-card-title>Order History</mat-card-title>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item *ngFor="let order of orders">
+          <h3 matLine>Order #{{ order.id }}</h3>
+          <p matLine>
+            Date: {{ order.orderDate | date }} | Total: ${{ order.totalAmount }}
+          </p>
+          <p matLine>Status: {{ order.status }}</p>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>

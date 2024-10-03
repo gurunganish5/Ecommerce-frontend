@@ -1,0 +1,10 @@
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mat-card{
+    max-width: 300px;
+    margin: 1em;
+}
